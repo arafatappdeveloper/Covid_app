@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../view_models/world_covid.dart';
 class BottomPageView extends StatefulWidget {
   const BottomPageView({super.key});
 
@@ -9,7 +11,7 @@ class BottomPageView extends StatefulWidget {
 class _BottomPageViewState extends State<BottomPageView> {
   static  List<Widget> _widgetList=[
     Text('data'),
-    Text('data'),
+    WorldCovid(),
     Text('data'),
   ];
   void _ontapped(int index)async{
